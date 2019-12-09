@@ -1,0 +1,25 @@
+* {
+  background-color: yellow;
+  }
+
+.titleBar h1 {
+font-family: 'Squada One', 'Orbitron';
+text-align: center;
+}
+
+p {
+  font-family: 'Orbitron';
+  }
+
+#secondBar {
+  text-align: center; 
+  }
+
+.box {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid black;
+  }
