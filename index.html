@@ -22,34 +22,32 @@
   <div id="secondBar">
 
     <div class="box player1">
-      <p>Player 1</p>
+      <p class="p1">Player 1</p>
       <p id="symbol">X</p>
       </div>
 
     <div class="box fillInForm">
-      <form class="playerDetails">
 
-        <input id="nameform" type="text" value="" placeholder="Enter name here">
+        <input class="nameForm" type="text" value="" placeholder="Enter name here">
 
         <br>
         <select class="dropDown"> <!-- dropdown list - this is the container for it -->
 
         <option value=" " disabled selected<!-- disables the option and 'selected': the first thing you see -->>Please select one of the following:</option>
-        <option value="1">X</option>
-        <option value="2">O</option>
+        <option>X</option>
+        <option>O</option>
 
         </select>
 
         <!-- <button name="button">Click me</button> ANOTHER BUTTON OPT -->
 
-        <input type="submit" name="" value="Ready!">
+        <button id="submitForm">Ready!</button>
 
-        </form>
 
       </div>
 
       <div class="box player2">
-        <p>Player 2</p>
+        <p class="p2">Player 2</p>
         <p id="symbol">O</p>
       </div>
 

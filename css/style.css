@@ -37,7 +37,7 @@ p {
   border-radius: 20%;
   }
 
-input {
+.nameForm {
   border-radius: 10%;
   width: 6.5vw;
   height: 1.4vw;
@@ -60,8 +60,6 @@ input {
   top: 2vw;
   border: 2px solid black; */
   border-radius: 20%;
-  /* left: 30vw;
-  top: 2vw; */
   margin: 0 auto; /* centers */
   border-spacing: 0px;
 
