@@ -23,18 +23,18 @@
 
     <div class="box player1">
       <p>Player 1</p>
-      <p>X</p>
+      <p id="symbol">X</p>
       </div>
 
     <div class="box fillInForm">
-      <form id="nameform">
+      <form class="playerDetails">
 
-        <input type="text" value="" placeholder="Enter name here">
+        <input id="nameform" type="text" value="" placeholder="Enter name here">
 
         <br>
-        <select name="symbol"> <!-- dropdown list - this is the container for it -->
+        <select class="dropDown"> <!-- dropdown list - this is the container for it -->
 
-        <option value="" disabled selected<!-- disables the option and 'selected': the first thing you see -->>Please select one of the following:</option>
+        <option value=" " disabled selected<!-- disables the option and 'selected': the first thing you see -->>Please select one of the following:</option>
         <option value="1">X</option>
         <option value="2">O</option>
 
@@ -50,10 +50,66 @@
 
       <div class="box player2">
         <p>Player 2</p>
-        <p>O</p>
+        <p id="symbol">O</p>
       </div>
 
     </div>
+
+    <!-- <div class="gameBoard">
+
+    <div class="grid" id="1a"></div>
+    <div class="grid" id="1b"></div>
+    <div class="grid" id="1c"></div>
+    <div class="grid" id="2a"></div>
+    <div class="grid" id="2b"></div>
+    <div class="grid" id="2c"></div>
+    <div class="grid" id="3a"></div>
+    <div class="grid" id="3b"></div>
+    <div class="grid" id="3c"></div>
+
+    </div> -->
+
+    <table class="gameBoard">
+    <tr>
+        <td class="grid" id="1a"></td>
+        <td class="grid" id="1b"></td>
+        <td class="grid" id="1c"></td>
+    </tr>
+    <tr>
+        <td class="grid" id="2a"></td>
+        <td class="grid" id="2b"></td>
+        <td class="grid" id="2c"></td>
+    </tr>
+    <tr>
+        <td class="grid" id="3a"></td>
+        <td class="grid" id="3b"></td>
+        <td class="grid" id="3c"></td>
+    </tr>
+</table>
+
+<!-- <div class="container2">
+
+  <div class="row2">
+    <div class="box2">
+    <div class="box2">
+    <div class="box2">
+  </div>
+
+  <div class="row2">
+    <div class="box2">
+    <div class="box2">
+    <div class="box2">
+  </div>
+
+  <div class="row2">
+    <div class="box2">
+    <div class="box2">
+    <div class="box2">
+  </div>
+
+  </div> -->
+
+</div>
 
 ​
 </body>
