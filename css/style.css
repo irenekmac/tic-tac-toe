@@ -9,9 +9,15 @@ font-size: 45px;
 margin: 0;
 }
 
-p {
+h2 {
   font-family: 'Orbitron';
-  font-size: 18px;
+  font-size: 15px;
+  }
+
+p {
+    font-family: 'Orbitron';
+    font-size: 30px;
+    margin: 0 auto;
   }
 
 #secondBar {
@@ -35,6 +41,7 @@ p {
   vertical-align: top;
   border: 2px solid black;
   border-radius: 20%;
+  padding: 3px;
   }
 
 .nameForm {
