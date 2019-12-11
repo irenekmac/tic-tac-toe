@@ -5,8 +5,6 @@ let playerTwoSymbol = null;
 let playerOneName = null;
 let playerTwoName = null;
 
-let playerTurn = true;//determines which player plays
-
 let turn = 1;
 
 const winCombinations = [
@@ -23,7 +21,7 @@ const winCombinations = [
 $( document ).ready(function() {
     // console.log( "ready!" );
 
-  //when player 1's name and symbol is submitted print on the left $('.player1').
+  //when player 1's name and symbol is submitted print on the left box.
 
   $('#submitForm').on('click', function(){
 
@@ -35,36 +33,8 @@ $( document ).ready(function() {
 
       $('.p2').text( $('.nameForm').val() );
 
-    }
+    }//if statement
 
-
-
-    // $('.p1').text( $('.nameForm').val() );
-    // playerOneName = $('.nameForm').val();
-    //
-    // // console.log( $('.dropDown').val() );
-    //
-    // $('#symbol').text( $('.dropDown').val() );
-    //
-    // playerOneSymbol = $('.dropDown').val();
-
-    //
-    // //if statement for when player1 enters details player2 can put details in next
-    // if (playerOneSymbol !== null) {
-    //   $('#submitForm').on('click', function(){
-    //
-    //     $('.p2').text( $('.nameForm').val() );//.nameForm will log name on both boxes
-    //     playerTwoName = $('.nameForm').val();
-    //
-    //     // console.log( $('.dropDown').val() );
-    //
-    //     $('#symbol').text( $('.dropDown').val() );
-    //
-    //     playerTwoSymbol = $('.dropDown').val();
-    //
-    //     });//if statement
-    //
-    //   };//if statement
 
     });//player details function
 
@@ -78,6 +48,7 @@ $( document ).ready(function() {
 
       if( turn === 1 ){
       $(this).text('X');
+      $(this).text() !== null;
       turn = 2
       // $('#turn').text(2)
 
@@ -97,18 +68,25 @@ $( document ).ready(function() {
 
       //playerMoves gives us the index position of every move
       let playerMoves = '';
+
       // For loop within a loop which returns each single digit of the winning combination to
       for (var w = 0; w < winCombinations[i].length; w++) {
+
+        //gridPosition gives us index positions of a winCombination
         let gridPosition = parseInt(winCombinations[i][w]);
         // console.log(gridPosition);
+
         let board = $('.grid');
+
         let squareContents = board[winCombinations[i][w] -1 ].innerHTML;
-        playerMoves =  playerMoves + boardContents
-      }
+
+        //this updates the variable so when a player lands on a winCombination it adds on to the playerMoves
+        playerMoves =  playerMoves + squareContents
+
+        }//for loop
 
 
-      // test to see if winner
-
+      //If a player connects three symbols next to eachother then the player wins.
       if(playerMoves === 'XXX'){
         alert('Winner!');
 
@@ -116,25 +94,19 @@ $( document ).ready(function() {
         (playerMoves === 'OOO'){
         alert('Winner!');
 
-      }
+        }//if/else statement
 
-  } // end of for loop
-
-
+      } // end of for loop
 
 
+    }); //For loop
 
-      }); //else
-    // });//.grid function
 
-  //If a player connects three symbols next to eachother then the player wins.
-  //If both players fill the board without connecting three symbols then it's a draw.
+    //If both players fill the board without connecting three symbols then it's a draw.
 
-  // const draw = function(){
-  //    turn === 9;
-  //    return
-  //
-  //  };
+
+
+
 
 
 
