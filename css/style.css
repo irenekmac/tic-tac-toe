@@ -80,4 +80,13 @@ td {
   height: 11vw;
   width: 11vw;
   border-radius: 7px;
+  margin: 0 auto; /* centers */
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Orbitron';
+}
+
+td:hover {
+  background-color: rgba(255, 100, 0, 0.5);
+  cursor: crosshair;
 }
