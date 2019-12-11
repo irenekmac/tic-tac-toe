@@ -1,9 +1,8 @@
 
-let playerOneSymbol = null;
-let playerTwoSymbol = null;
 
 let playerOneName = null;
 let playerTwoName = null;
+let $myvar;
 
 let turn = 1;
 
@@ -26,12 +25,14 @@ $( document ).ready(function() {
   $('#submitForm').on('click', function(){
 
     if ($('.dropDown').val() === 'X') {
+      playerOneSymbol = 'X';
 
       $('.p1').text( $('.nameForm').val() );
 
       } else {
 
       $('.p2').text( $('.nameForm').val() );
+      playerTwoSymbol = 'O';
 
     }//if statement
 
@@ -41,25 +42,25 @@ $( document ).ready(function() {
 
   //When grid is clicked player symbol shows on the boxes
   $('.grid').click(function(){
-    // if( turn === 1 && !$(this).text() ){
 
-    const box = $(this)[0].id;
+    const box = $(this)[0].id;//variable that stores the index position of clicked square.
     // console.log(box);
+// console.log($(this)[0].innerHTML);
+    if ($(this)[0].innerHTML === '') {
 
       if( turn === 1 ){
-      $(this).text('X');
-      $(this).text() !== null;
-      turn = 2
-      // $('#turn').text(2)
-
+        console.log(playerOneSymbol);
+        $(this).text(playerOneSymbol);
+        // $(this).text() === 'X' || 'O';
+        turn = 2
+        // $('#turn').text(2)
 
       } else {
-          $(this).text('O');
-          turn = 1
+        $(this).text('O');
+        turn = 1
 
       }
-        // $('#turn').text(turn)
-
+    }
 
     // $$$$$LOGIC TO DETERM INE WINNER $$$$$$
     //For loop that returns the arrays of single winCombinations
@@ -103,13 +104,6 @@ $( document ).ready(function() {
 
 
     //If both players fill the board without connecting three symbols then it's a draw.
-
-
-
-
-
-
-
 
 
 
