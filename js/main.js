@@ -1,10 +1,6 @@
 
-
-// let playerOneName = null;
-// let playerTwoName = null;
-// let $myvar;
-
 let turn = 1;
+
 //every possible win combination
 const winCombinations = [
     [1, 2, 3],
@@ -63,9 +59,6 @@ $( document ).ready(function() {
           turn = 1
 
         }//else
-
-        // turn++;
-        // console.log(turn);
 
       }//if statement
 
