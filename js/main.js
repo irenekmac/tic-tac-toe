@@ -109,19 +109,9 @@ $( document ).ready(function() {
             alert('It\'s a Draw.');
             }
 
-      // }
 
       } // end of for loop
 
-
-      //If both players fill the board without connecting three symbols then it's a draw.
-    //   const draw = function() {
-    //     if (board === '0' || 'X') {
-    //
-    //   } else if (playerMoves !== 'XXX' && 'OOO') {
-    //
-    //   }
-    // }
 
     }); //grid function
 

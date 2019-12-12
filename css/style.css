@@ -34,10 +34,10 @@ p {
   }
 
 .dropDown {
-  margin: 10px;
+  margin: 2em;
   width: 5.5vw;
   height: 1vh;
-  /* padding: 5vh; */
+  padding: 5px;
   background-color: white;
   color: black;
   }
@@ -48,7 +48,7 @@ p {
   height: 10vw;
   text-align: center;
   vertical-align: top;
-  border: 6px dotted #FF9E13;
+  border: .5vw dotted #FF9E13;
   border-radius: 20%;
   padding: 3px;
   }
@@ -85,7 +85,7 @@ p {
 td {
   display: inline-block;
   position: relative;
-  border: 6px solid #200AFF;
+  border: .5vw solid #200AFF;
   /* border-radius: 10%; */
   height: 11vw;
   width: 11vw;
@@ -98,7 +98,7 @@ td {
 }
 
 td:hover {
-  background-color: #FFD51D;
+  background-color: rgba(255, 213, 29, 0.5);
   cursor: crosshair;
 }
 
