@@ -11,7 +11,7 @@ font-size: 45px;
 margin: 0 auto;
 position: relative;
 display: block;
-width: 41%;
+width: 50%;
 height: auto;
 margin-top: -1em;
 }
@@ -36,7 +36,8 @@ p {
 .dropDown {
   margin: 10px;
   width: 5.5vw;
-  height: 1vw;
+  height: 1vh;
+  /* padding: 5vh; */
   background-color: white;
   color: black;
   }
@@ -47,7 +48,7 @@ p {
   height: 10vw;
   text-align: center;
   vertical-align: top;
-  border: 3px solid #200AFF;
+  border: 6px dotted #FF9E13;
   border-radius: 20%;
   padding: 3px;
   }
@@ -63,9 +64,9 @@ p {
 
 .playerDetails {
   word-wrap: break-word;
-  margin: 1vw .4vw 0 .4vw;
+  margin: .5vw .4vw 0 .4vw;
   padding: 0.5vw;
-  margin: 1.5vw;
+  /* margin: 1.5vw; */
 }
 
 #symbol {
@@ -97,4 +98,22 @@ td {
 td:hover {
   background-color: #FFD51D;
   cursor: crosshair;
+}
+
+.pacman {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  right: 19vw;
+  bottom: 95vh;
+}
+.ghosts {
+  position: relative;
+  display: inline-block;
+  width: 23%;
+  height: auto;
+  left: 72vw;
+  bottom: 110vh;
+
 }

@@ -1,6 +1,8 @@
 
 let turn = 1;
 
+let totalMoves =  parseInt($('.grid').val());
+
 //every possible win combination
 const winCombinations = [
     [1, 2, 3],
@@ -22,6 +24,7 @@ $( document ).ready(function() {
 
     if ($('.dropDown').val() === 'X') {
       playerOneSymbol = 'X';
+
 
       $('.p1').text( $('.nameForm').val() );
         playerOneName = $('.p1')[0].innerHTML;
@@ -50,17 +53,20 @@ $( document ).ready(function() {
       if( turn === 1 ){
         // console.log(playerOneSymbol);
         $(this).text(playerOneSymbol);
-        // $(this).text() === 'X' || 'O';
+          // $(this).text() === 'X' || 'O';
           turn = 2
-        // $('#turn').text(2)
+          // $('#turn').text(2)
+          totalMoves++;
 
         } else {//player O's turn
-          $(this).text('O');
-          turn = 1
+            $(this).text('O');
+            turn = 1
+            totalMoves++;
 
         }//else
-
       }//if statement
+      // totalMoves++;
+      console.count(totalMoves);
 
     // $$$$$LOGIC TO DETERM INE WINNER $$$$$$
     //For loop that returns the arrays of single winCombinations
@@ -87,7 +93,6 @@ $( document ).ready(function() {
 
       }//for loop winCombinations[i]
 
-
       //If a player connects three symbols next to eachother then the player wins.
 
       if(playerMoves === 'XXX'){
@@ -99,7 +104,7 @@ $( document ).ready(function() {
 
 
         } else if
-          ( turn === 9 ){
+          (totalMoves === 9){
             alert('It\'s a Draw.');
             }
 
