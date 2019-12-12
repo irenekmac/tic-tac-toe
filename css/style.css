@@ -79,12 +79,14 @@ p {
   border-spacing: 0px;
 
 
+
 }
 
 td {
   display: inline-block;
   position: relative;
   border: 6px solid #200AFF;
+  /* border-radius: 10%; */
   height: 11vw;
   width: 11vw;
   border-radius: 7px;

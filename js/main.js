@@ -1,7 +1,8 @@
 
 let turn = 1;
 
-let totalMoves =  parseInt($('.grid').val());
+let totalMoves = 0;
+// parseInt($('.grid').val());
 
 //every possible win combination
 const winCombinations = [
