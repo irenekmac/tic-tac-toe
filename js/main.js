@@ -17,10 +17,8 @@ const winCombinations = [
    ];
 
 $( document ).ready(function() {
-    // console.log( "ready!" );
 
   //when player 1's name and symbol is submitted print on the left box.
-
   $('#submitForm').on('click', function(){
 
     if ($('.dropDown').val() === 'X') {
@@ -46,8 +44,8 @@ $( document ).ready(function() {
 
     //variable that stores the index position of clicked square.
     const box = $(this)[0].id;
-
     // console.log(box);
+
     if ($(this)[0].innerHTML === '') { //if this square has 'X' or 'O' let next player play.
       // console.log($(this)[0].innerHTML);
 
@@ -67,9 +65,9 @@ $( document ).ready(function() {
         }//else
       }//if statement
       // totalMoves++;
-      console.count(totalMoves);
+      // console.count(totalMoves);
 
-    // $$$$$LOGIC TO DETERM INE WINNER $$$$$$
+    // $$$$$LOGIC TO DETERMINE WINNER $$$$$$
     //For loop that returns the arrays of single winCombinations
     for (var i = 0; i < winCombinations.length; i++) {
       // console.log(winCombinations[i]);
@@ -86,16 +84,17 @@ $( document ).ready(function() {
 
         let board = $('.grid');
 
+        //combining the grid and winCombinations: this is done to comp
+        //the player's moves and works with  the winCombinations to find a win.
         let squareContents = board[winCombinations[i][w] -1 ].innerHTML;
 
-        //this works with where the player's moves and works with  the winCombinations to find a win.
         //matching the array of win combos with the player index positions
         playerMoves += squareContents
 
-      }//for loop winCombinations[i]
+        }//for loop winCombinations[i]
+
 
       //If a player connects three symbols next to eachother then the player wins.
-
       if(playerMoves === 'XXX'){
         alert(playerOneName + ' is the winner!');
 
