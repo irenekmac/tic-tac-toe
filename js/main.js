@@ -104,9 +104,11 @@ $( document ).ready(function() {
 
 
         } else if
-          (totalMoves === 9){
+          (totalMoves === 9) {
             alert('It\'s a Draw.');
-            }
+            totalMoves = 0; //reset's the game
+            turn = 1;
+          }
 
 
       } // end of for loop
